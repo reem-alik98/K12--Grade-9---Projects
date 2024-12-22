@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Shopping Cart</h1>
+    <table class="cart-table">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Total Price</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="cart-body">
+        <!-- JavaScript will populate this -->
+      </tbody>
+    </table>
+    <div class="total-cost">
+      <h2 id="total-cost">Total Cost: $0</h2>
+    </div>
+    <div class="add-item">
+      <h2>Add New Item</h2>
+      <form id="add-item-form">
+        <input type="text" id="item-name" placeholder="Item Name" required>
+        <input type="number" id="item-price" placeholder="Price" required min="1">
+        <input type="number" id="item-quantity" placeholder="Quantity" required min="1">
+        <button type="submit">Add Item</button>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
